@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "b2bs",
+  "info": {
+    "singularName": "b2b",
+    "pluralName": "b2bs",
+    "displayName": "pag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "videoContent": {
+      "type": "component",
+      "repeatable": true,
+      "component": "video.video"
+    }
+  }
+}

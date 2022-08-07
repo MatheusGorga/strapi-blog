@@ -1,0 +1,27 @@
+{
+    "kind": "collectionType",
+    "collectionName": "paginas",
+    "info": {
+        "singularName": "pagina",
+        "pluralName": "paginas",
+        "displayName": "pagina"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title"
+        },
+        "conteudo": {
+            "type": "component",
+            "repeatable": true,
+            "component": "video.video"
+        }
+    }
+}
